@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Civil_Advocacy</string>
+    <string name="about">about</string>
+    <string name="search">search</string>
 </resources>
