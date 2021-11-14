@@ -1,5 +1,12 @@
 <resources>
-    <string name="app_name">Civil_Advocacy</string>
+    <string name="app_name">Civil Advocacy</string>
     <string name="about">about</string>
     <string name="search">search</string>
+    <string name="civil_advocacy">Civil Advocacy</string>
+    <string name="data_provided_by">Data Provided By</string>
+    <string name="google_civic_information_api">
+        <a href="https://developers.google.com/civic-information/">Google Civic Information API</a>
+    </string>
+    <string name="_2021_riddhi_damani">© 2021 Riddhi Damani</string>
+    <string name="version_1_0">Version 1.0</string>
 </resources>

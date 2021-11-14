@@ -1,13 +1,16 @@
 package com.riddhidamani.civil_advocacy;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
+
 public class MainActivity extends AppCompatActivity {
+
+    private static final String TAG = "MainActivity";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,13 +25,20 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public boolean onOptionsItemSelected(MenuItem menuItem) {
-        switch(menuItem.getItemId()) {
-            case R.id.about:
-                // code for about activity
-            case R.id.search:
-                // code for search
-            default:
-                return super.onOptionsItemSelected(menuItem);
+        if(menuItem.getItemId() == R.id.about) {
+            // Invoke About Activity
+            openAboutActivity();
+            return true;
         }
+        else {
+            Log.d(TAG, "onOptionsItemSelected: Unknown Item: " + menuItem.getTitle());
+        }
+        return super.onOptionsItemSelected(menuItem);
+    }
+
+    // When info icon is clicked, About Activity is opened
+    private void openAboutActivity() {
+        Intent intent = new Intent(this, AboutActivity.class);
+        startActivity(intent);
     }
 }
