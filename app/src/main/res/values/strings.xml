@@ -4,9 +4,7 @@
     <string name="search">search</string>
     <string name="civil_advocacy">Civil Advocacy</string>
     <string name="data_provided_by">Data Provided By</string>
-    <string name="google_civic_information_api">
-        <a href="https://developers.google.com/civic-information/">Google Civic Information API</a>
-    </string>
+    <string name="google_civic_information_api"><u>Google Civic Information API</u></string>
     <string name="_2021_riddhi_damani">© 2021 Riddhi Damani</string>
     <string name="version_1_0">Version 1.0</string>
     <string name="title_activity_official">OfficialActivity</string>
@@ -22,4 +20,6 @@
     <string name="fb">fb</string>
     <string name="twitter">twitter</string>
     <string name="youtube">youtube</string>
+    <string name="separator">separator</string>
+    <string name="bck_btn_bye_msg">The Back button was pressed - Bye!</string>
 </resources>

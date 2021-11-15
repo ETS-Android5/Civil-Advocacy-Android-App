@@ -30,7 +30,7 @@ public class Office implements Serializable {
     }
 
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public void setName(String name) {
@@ -38,7 +38,7 @@ public class Office implements Serializable {
     }
 
     public String getParty() {
-        return party;
+        return this.party;
     }
 
     public void setParty(String party) {
@@ -46,7 +46,7 @@ public class Office implements Serializable {
     }
 
     public String getAddress() {
-        return address;
+        return this.address;
     }
 
     public void setAddress(String address) {
@@ -54,7 +54,7 @@ public class Office implements Serializable {
     }
 
     public String getEmailID() {
-        return emailID;
+        return this.emailID;
     }
 
     public void setEmailID(String emailID) {
@@ -62,7 +62,7 @@ public class Office implements Serializable {
     }
 
     public String getPhoneNum() {
-        return phoneNum;
+        return this.phoneNum;
     }
 
     public void setPhoneNum(String phoneNum) {
@@ -70,7 +70,7 @@ public class Office implements Serializable {
     }
 
     public String getWebURL() {
-        return webURL;
+        return this.webURL;
     }
 
     public void setWebURL(String webURL) {
@@ -78,7 +78,7 @@ public class Office implements Serializable {
     }
 
     public String getPhotoURL() {
-        return photoURL;
+        return this.photoURL;
     }
 
     public void setPhotoURL(String photoURL) {
@@ -86,7 +86,7 @@ public class Office implements Serializable {
     }
 
     public String getFbID() {
-        return fbID;
+        return this.fbID;
     }
 
     public void setFbID(String fbID) {
@@ -94,7 +94,7 @@ public class Office implements Serializable {
     }
 
     public String getTwitterID() {
-        return twitterID;
+        return this.twitterID;
     }
 
     public void setTwitterID(String twitterID) {
@@ -102,7 +102,7 @@ public class Office implements Serializable {
     }
 
     public String getYoutubeID() {
-        return youtubeID;
+        return this.youtubeID;
     }
 
     public void setYoutubeID(String youtubeID) {

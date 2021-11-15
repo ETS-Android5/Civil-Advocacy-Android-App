@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".OfficialActivity"
-    tools:ignore="SpeakableTextPresentCheck">
+    >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/photoConstraintLayout"
@@ -70,13 +70,14 @@
             app:layout_constraintTop_toBottomOf="@+id/officialName" />
 
         <ImageView
-            android:id="@+id/OfficialPhotoView"
+            android:id="@+id/officialPhotoView"
             android:layout_width="0dp"
             android:layout_height="360dp"
             android:layout_marginStart="48dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="48dp"
             android:contentDescription="@string/official_photo"
+            android:onClick="officialPhotoClicked"
             android:scaleType="fitCenter"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -94,7 +95,7 @@
             android:textSize="18sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/OfficialPhotoView" />
+            app:layout_constraintTop_toBottomOf="@+id/officialPhotoView" />
 
         <TextView
             android:id="@+id/phoneTitle"
@@ -184,12 +185,13 @@
 
         <ImageView
             android:id="@+id/facebook"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginStart="72dp"
             android:layout_marginTop="24dp"
             android:layout_marginBottom="32dp"
             android:contentDescription="@string/facebook_icon"
+            android:onClick="fbClicked"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/websiteLine"
@@ -197,22 +199,25 @@
 
         <ImageView
             android:id="@+id/twitter"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginStart="60dp"
             android:layout_marginTop="24dp"
             android:contentDescription="@string/todo"
+            android:onClick="twitterClicked"
             app:layout_constraintStart_toEndOf="@+id/facebook"
             app:layout_constraintTop_toBottomOf="@+id/websiteLine"
-            app:srcCompat="@drawable/twitter" />
+            app:srcCompat="@drawable/twitter"
+            tools:ignore="ImageContrastCheck,DuplicateSpeakableTextCheck" />
 
         <ImageView
             android:id="@+id/youtube"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_marginStart="60dp"
             android:layout_marginTop="24dp"
             android:contentDescription="@string/todo"
+            android:onClick="youtubeClicked"
             app:layout_constraintStart_toEndOf="@+id/twitter"
             app:layout_constraintTop_toBottomOf="@+id/websiteLine"
             app:srcCompat="@drawable/youtube" />
@@ -221,12 +226,13 @@
             android:id="@+id/partyIcon"
             android:layout_width="75dp"
             android:layout_height="50dp"
-            app:layout_constraintBottom_toBottomOf="@+id/OfficialPhotoView"
-            app:layout_constraintEnd_toEndOf="@+id/OfficialPhotoView"
-            app:layout_constraintStart_toStartOf="@+id/OfficialPhotoView"
+            android:contentDescription="@string/todo"
+            android:onClick="partyIconClicked"
+            app:layout_constraintBottom_toBottomOf="@+id/officialPhotoView"
+            app:layout_constraintEnd_toEndOf="@+id/officialPhotoView"
+            app:layout_constraintStart_toStartOf="@+id/officialPhotoView"
             app:srcCompat="@drawable/dem_logo"
-            tools:ignore="ImageContrastCheck"
-            android:contentDescription="@string/todo" />
+            tools:ignore="ImageContrastCheck" />
 
         <TextView
             android:id="@+id/emailTitle"

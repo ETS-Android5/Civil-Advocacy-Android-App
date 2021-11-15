@@ -40,7 +40,7 @@
             android:textColor="@android:color/background_light"
             android:textSize="24sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/OfficialPhotoView"
+            app:layout_constraintEnd_toStartOf="@+id/officialPhotoView"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/officialLocation" />
 
@@ -65,12 +65,12 @@
             android:text="@string/textview"
             android:textColor="@android:color/background_light"
             android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="@+id/OfficialPhotoView"
-            app:layout_constraintStart_toStartOf="@+id/OfficialPhotoView"
+            app:layout_constraintEnd_toEndOf="@+id/officialPhotoView"
+            app:layout_constraintStart_toStartOf="@+id/officialPhotoView"
             app:layout_constraintTop_toBottomOf="@+id/officialLocation" />
 
         <ImageView
-            android:id="@+id/OfficialPhotoView"
+            android:id="@+id/officialPhotoView"
             android:layout_width="240dp"
             android:layout_height="360dp"
             android:layout_marginTop="8dp"
@@ -117,7 +117,7 @@
             android:textColorLink="@android:color/background_light"
             android:textSize="18sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/OfficialPhotoView"
+            app:layout_constraintEnd_toStartOf="@+id/officialPhotoView"
             app:layout_constraintStart_toEndOf="@+id/addressTitle"
             app:layout_constraintTop_toTopOf="@+id/addressTitle" />
 
@@ -213,9 +213,9 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:contentDescription="@string/partyLogo"
-            app:layout_constraintBottom_toBottomOf="@+id/OfficialPhotoView"
-            app:layout_constraintEnd_toEndOf="@+id/OfficialPhotoView"
-            app:layout_constraintStart_toStartOf="@+id/OfficialPhotoView"
+            app:layout_constraintBottom_toBottomOf="@+id/officialPhotoView"
+            app:layout_constraintEnd_toEndOf="@+id/officialPhotoView"
+            app:layout_constraintStart_toStartOf="@+id/officialPhotoView"
             app:srcCompat="@drawable/dem_logo" />
 
         <TextView

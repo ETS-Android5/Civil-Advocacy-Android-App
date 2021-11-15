@@ -11,32 +11,30 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="@string/textview"
+        android:textColor="@color/colorPrimary"
         android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/nameParty"
         android:layout_width="wrap_content"
-        android:layout_height="24dp"
-        android:layout_marginStart="340dp"
-        android:layout_marginTop="35dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
         android:text="@string/textview"
+        android:textColor="@color/colorPrimary"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/office"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/office" />
 
     <ImageView
         android:id="@+id/separator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:contentDescription="@string/todo"
+        android:contentDescription="@string/separator"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/nameParty"

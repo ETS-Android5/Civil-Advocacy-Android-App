@@ -48,6 +48,7 @@
         android:focusable="auto"
         android:fontFamily="sans-serif-light"
         android:linksClickable="false"
+        android:onClick="clickAPIURL"
         android:text="@string/google_civic_information_api"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
