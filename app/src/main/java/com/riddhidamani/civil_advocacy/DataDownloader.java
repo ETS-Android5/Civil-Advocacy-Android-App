@@ -17,7 +17,7 @@ public class DataDownloader implements Runnable {
     private String location;
     private static final String TAG = "DataDownloader";
     public static HashMap<String, String> officialMapping = new HashMap<>();
-    private static final String API_URL = "https://www.googleapis.com/civicinfo/v2/representatives?key=AIzaSyBzMOGHIVfjyvDY2dgZW26KMKf4jeVHs00&address=";
+    private static final String API_URL = "";
 
     public DataDownloader(MainActivity mainActivity, String location) {
         this.mainActivity = mainActivity;
