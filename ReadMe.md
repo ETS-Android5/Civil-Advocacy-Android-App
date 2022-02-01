@@ -29,3 +29,5 @@ Emulator used: Nexus 5X | Resolution: 1080 x 1920 | Details: With Playstore
 
 ## Video Demo
 <img src="./app/src/main/res/bestCase.gif" width="300" height="500"/>
+<img src="./app/src/main/res/worstCase.gif" width="300" height="500"/>
+<img src="./app/src/main/res/horizontal.gif" width="700" height="400"/>
